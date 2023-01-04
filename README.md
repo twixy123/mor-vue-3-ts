@@ -1,4 +1,4 @@
-# morphzing-vue3-ts
+# mor-vue3-ts
 
 This template should help get you started developing with Vue 3 in Vite.
 
