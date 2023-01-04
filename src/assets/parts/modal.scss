@@ -1,0 +1,11 @@
+.modal {
+  &-container {
+    background: white;
+    width: 400px;
+    padding: 24px;
+    row-gap: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+}
