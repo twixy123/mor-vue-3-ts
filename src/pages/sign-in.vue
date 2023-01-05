@@ -2,9 +2,7 @@
   <FormSignIn @submit="onSubmit">
     <template #actions>
       <div :class="$style['btn-actions']">
-        <button type="submit">
-          Login
-        </button>
+        <button type="submit">Submit</button>
       </div>
     </template>
   </FormSignIn>
@@ -30,13 +28,13 @@ const authStore = useAuthStore()
 
 const loader = inject('loader') as Loader
 
-async function onSubmit (requestData: RequestBody) {
+async function onSubmit(requestData: RequestBody) {
   loader.show()
-  
+
   try {
     await authStore.login(requestData)
   } catch (error) {
-    console.log('error', error) 
+    console.log('error', error)
   } finally {
     loader.hide()
   }
